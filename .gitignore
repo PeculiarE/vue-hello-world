@@ -4,10 +4,14 @@ node_modules
 
 
 # local env files
+# e.g. secret key for payment integration. local variables personal to you and anyone working on the project.
+# it should not be pushed to github where others can see it and use it to defraud or siphon money.
 .env.local
 .env.*.local
 
 # Log files
+# error file for you to view and check when encountering errors.
+# not necessary to push to github as you won't be pushing a code with error(s) in the first place.
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
