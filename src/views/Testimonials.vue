@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>This is the Testimonial Page</h1>
-        <HelloWorld :msg="message" />
+        <HelloWorld @updateMessage='handleUpdateMessage' :msg="message" />
         <!-- <HelloWorld msg="Read the glowing reviews!" /> -->
         <!-- <HelloWorld /> -->
     </div>
@@ -20,5 +20,10 @@ export default {
   components: {
     HelloWorld,
   },
+  methods: {
+    handleUpdateMessage(payload) {
+      this.message = payload.newMsg
+    }
+  }
 };
 </script>
