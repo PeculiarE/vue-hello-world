@@ -34,8 +34,21 @@
 <script>
 export default {
   name: 'HelloWorld',
+  // props: {
+  //   msg: String,
+  // },
+  // props: {
+  //   msg: {
+  //     type: String,
+  //     default: 'Welcome friend!'
+  //   }
+  // },
+  // props: ['msg'],
   props: {
-    msg: String,
+    msg: {
+      type: String,
+      required: true
+    }
   },
 };
 </script>
